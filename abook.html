@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Audio Book</title>
+    <link rel="stylesheet" href="css/abook.css" />
+  </head>
+  <body>
+    <div id="playlist-container">
+      <img src="app.ico" onclick="home()" id="hm" />
+      <h2 class="head1">PLAYLIST</h2>
+      <ul id="playlist"></ul>
+    </div>
+
+    <div id="player-container">
+      <img src="images/minmax.png" id="fulhal" onclick="full()" />
+      <h2 class="head2" id="head2">Playing</h2>
+      <h3 id="current-song-title">audio books</h3>
+      <img
+        id="current-song-image"
+        src="images/audiobooks.png"
+        alt="Current Song Image"
+      />
+      <audio id="audio" controls>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <script src="js/books.js"></script>
+    <script src="js/navi.js"></script>
+    <script src="js/abook.js"></script>
+  </body>
+</html>

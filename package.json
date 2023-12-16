@@ -1,0 +1,13 @@
+{
+    "name": "san's_day",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^27.1.2",
+        "electron-packager": "^17.1.2"
+    },
+    "scripts": {
+        "start": "electron .",
+        "package-win": "electron-packager . sans_day --overwrite --asar=true --platform=win32 --arch=ia32 --icon=app.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"sans_day\""
+    }
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>san's day</title>
+        <link rel="icon" href="app.ico" type="image/ico">
+        <link rel="stylesheet" href="css/san_day.css">
+    </head>
+    <body>
+     <div id="main">
+      <div id="left">
+        <img src="images/hexagon-clock-.png" alt="clock" width="100px" />
+        <h2>time boxing</h2>
+        <p>
+          <u
+            ><h4>day:</h4>
+            <span id="today"></span
+          ></u>
+        </p>
+        <script>
+          var dt = new Date();
+          document.getElementById("today").innerHTML = dt.toLocaleDateString();
+        </script>
+        <h4>Top Daily Goals</h4>
+        <table class="daily">
+          <tr>
+            <td><input type="text" id="inputText1" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck1"
+                onchange="handleCheckboxChange('ck1', 'inputText1')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" id="inputText2" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck2"
+                onchange="handleCheckboxChange('ck2', 'inputText2')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" id="inputText3" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck3"
+                onchange="handleCheckboxChange('ck3', 'inputText3')"
+              />
+            </td>
+          </tr>
+        </table>
+        <br />
+        <h4>Brain Dump</h4>
+        <textarea id="inputText4" rows="10" cols="25"></textarea><br />
+      </div>
+      <div id="right">
+        <button id="save" onclick="saveToLocalStorage()">Save</button>
+        <button id="clr" onclick="resetCheckboxes()">Reset</button>
+        <br /><br />
+        <h4>Daily Schedule</h4>
+        <table class="daily">
+          <tr>
+            <td>1</td>
+            <td><input type="text" id="inputText5" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck5"
+                onchange="handleCheckboxChange('ck5', 'inputText5')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><input type="text" id="inputText6" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck6"
+                onchange="handleCheckboxChange('ck6', 'inputText6')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><input type="text" id="inputText7" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck7"
+                onchange="handleCheckboxChange('ck7', 'inputText7')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><input type="text" id="inputText8" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck8"
+                onchange="handleCheckboxChange('ck8', 'inputText8')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><input type="text" id="inputText9" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck9"
+                onchange="handleCheckboxChange('ck9', 'inputText9')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><input type="text" id="inputText10" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck10"
+                onchange="handleCheckboxChange('ck10', 'inputText10')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><input type="text" id="inputText11" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck11"
+                onchange="handleCheckboxChange('ck11', 'inputText11')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><input type="text" id="inputText12" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck12"
+                onchange="handleCheckboxChange('ck12', 'inputText12')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><input type="text" id="inputText13" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck13"
+                onchange="handleCheckboxChange('ck13', 'inputText13')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td><input type="text" id="inputText14" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck14"
+                onchange="handleCheckboxChange('ck14', 'inputText14')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td><input type="text" id="inputText15" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck15"
+                onchange="handleCheckboxChange('ck15', 'inputText15')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td><input type="text" id="inputText16" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck16"
+                onchange="handleCheckboxChange('ck16', 'inputText16')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td><input type="text" id="inputText17" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck17"
+                onchange="handleCheckboxChange('ck17', 'inputText17')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td><input type="text" id="inputText18" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck18"
+                onchange="handleCheckboxChange('ck18', 'inputText18')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td><input type="text" id="inputText19" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck19"
+                onchange="handleCheckboxChange('ck19', 'inputText19')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td><input type="text" id="inputText20" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck20"
+                onchange="handleCheckboxChange('ck20', 'inputText20')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td><input type="text" id="inputText21" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck21"
+                onchange="handleCheckboxChange('ck21', 'inputText21')"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td><input type="text" id="inputText22" /></td>
+            <td>
+              <input
+                type="checkbox"
+                id="ck22"
+                onchange="handleCheckboxChange('ck22', 'inputText22')"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+      <div id="quote-container">
+        <div id="quote-heading">Dear Me</div>
+        <div id="quote-text">Random quote will be displayed here</div>
+      </div>
+      <div id="player">
+        <div class="track-art" style="background-image: url('Desaandhiri.jpg');"></div>
+        <div class="track-name">Desaandhiri</div>
+        <div class="buttons">
+          <img src="images/back.png" class="prev-track" id="prev-track" onclick="prevTrack()">
+          <img src="images/pause-play.png" class="playpause-track" id="playpause-track" onclick="playpauseTrack()">
+          <img src="images/next.png" class="next-track" id="next-track" onclick="nextTrack()">
+        </div>
+      </div>
+      <script>
+       
+      </script>
+      <div id="legacy" class="show-text">
+        <h3>SANTHOSH K</h3>
+          <p class="hidden-text">let the legacy begin</p> 
+        </div>  
+      </div>
+      </div>
+     <div class="countdown-container">
+    <div class="countdown-box">
+      <input type="number" id="hours" min="0" max="1" value="0">
+      <input type="number" id="minutes" min="0" max="59" placeholder="0">
+      <input type="number" id="seconds" min="0" max="59" placeholder="0">
+    </div>
+    <div class="countdown-box">
+      <button id="startButton" >Start</button>
+      <button id="resetButton">Reset</button>
+    </div>
+  </div>
+  <audio id="timerAudio" src="audio/clock.mp3" loop></audio>
+
+  <script src="js/timer.js"></script>
+  <img src="images/report.png" id="wrkt" onclick="wrkt()">
+  <img src="images/books.png" id="books" onclick="bookpage()">
+  <script src="js/mainpart.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/qtgen.js"></script>
+  <script src="js/song.js"></script>
+  <script src="js/navi.js"></script>
+  <script src="js/player.js"></script>
+     <script> 
+      window.onload = function () {
+        loadCheckboxStates();
+      };
+    </script>   
+
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>san's day</title>
+    <link rel="icon" href="app.ico" type="image/ico" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      #reveal-image {
+        opacity: 0;
+        transition: opacity 5s ease;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="reveal-image"
+      src="images/entry.jpg"
+      alt="Round Image"
+      width="500"
+      height="500"
+    />
+    <audio id="reveal-audio" src="audio/entry.mp3" preload="auto"></audio>
+
+    <script>
+      const revealImage = document.getElementById("reveal-image");
+      const revealAudio = document.getElementById("reveal-audio");
+
+      window.onload = function () {
+        revealImage.style.opacity = 1;
+        revealAudio.play();
+      };
+
+      setTimeout(function () {
+        window.location.href = "san_day.html";
+      }, 7000);
+    </script>
+  </body>
+</html>
