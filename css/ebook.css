@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #070707;
+    overflow-y: scroll;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    position: absolute;
+    top: 10%;
+}
+
+.book {
+    cursor: pointer;
+}
+
+.book img {
+    width: 100%;
+    height: 80%;
+}
+
+.book-title {
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    left: 40%;
+    top: 2px;
+}
+
+#hm {
+    width: 50px;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+}
+
+#hh {
+    background-color: black;
+}
