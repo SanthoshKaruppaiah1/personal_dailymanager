@@ -1,0 +1,258 @@
+body {
+    background-image: url("../images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#main {
+    color: white;
+    margin-left: 40px;
+    margin-right: 50%;
+    padding: 2rem 2rem;
+    border-style: double;
+    background-color: rgba(95, 158, 160, 0.6);
+    border: none;
+    border-radius: 30px;
+
+}
+
+#right {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: top;
+}
+
+#left {
+    display: inline-block;
+    padding-left: 50px;
+    vertical-align: top;
+}
+
+#save {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    margin-left: 20%;
+}
+
+#save:hover {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#clr {
+    background-color: #f80606;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #FFFFFF;
+    border-radius: .25rem;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: absolute;
+    top: 56px;
+    right: 55%;
+}
+
+#clr:hover {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#quote {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 500px;
+    height: 200px;
+    border-radius: .50rem;
+    position: absolute;
+    top: 70%;
+    left: 55%;
+}
+
+#quote h3 {
+    padding-left: 40%;
+}
+
+#player {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 300px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    right: 25%;
+}
+
+.track-art {
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.track-name {
+    font-size: 15px;
+    color: white;
+}
+
+.buttons {
+    position: absolute;
+    top: 30px;
+    right: 8%;
+
+}
+
+.buttons img {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+#quote-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+}
+
+#quote-heading {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    bottom: 60px;
+}
+
+#quote-text {
+    font-size: 18px;
+    text-align: center;
+}
+
+.countdown-container {
+    background-color: rgba(10, 10, 100, 0.2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    left: 80%;
+
+}
+
+.countdown-box {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="number"] {
+    width: 3em;
+    font-size: 1.2em;
+    margin: 5px;
+    padding: 5px;
+}
+
+#resetButton,
+#startButton {
+    background-color: rgba(255, 253, 208, 0.6);
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+#resetButton:hover,
+#startButton:hover {
+    background-color: white;
+}
+
+#timerAudio {
+    display: none;
+    /* Hide the audio element */
+}
+
+#legacy {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 55%;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+#legacy h3 {
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+#legacy p {
+    margin-left: 20%;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.show-text:hover .hidden-text {
+    display: block;
+}
+
+#wrkt {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    width: 50px;
+    position: absolute;
+    left: 90%;
+    top: 60%;
+}
+
+#wrkt:hover {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+#books {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    width: 45px;
+    position: absolute;
+    left: 90%;
+    top: 80%;
+}
+
+#books:hover {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
